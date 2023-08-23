@@ -186,9 +186,19 @@
     padding: 15px;
     flex-direction: column;
     align-items: center;
-
 }
-  
+.button-card {
+    width: 75%;
+    padding: 10px;
+    border-radius: 15%;
+    border-width: 1px;
+    border-color: beige;
+}
+
+.button-card:hover {
+    background-color: rgb(82, 236, 159);
+}
+
   /* Medias Queries Unidades Main */
   @media (min-width: 768px) {
     .unidadesmain {

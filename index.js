@@ -64,10 +64,7 @@ const unidadesAHtml = (array) => {
 
     const cards = array.reduce ( (acc, element) => {
         return acc + `
-        <div class="card" id="card-${element.id}">
-            <button class="button-card" id="button-${element.id}">
-            <i class="fa-solid fa-star"></i>
-        </button>       
+        <div class="card" id="card-${element.id}"> 
         <h2>
             ${element.producto}
         </h2>
@@ -77,6 +74,8 @@ const unidadesAHtml = (array) => {
         <h4>
             Tipo de Vivienda: ${element.categoria}
         </h4>
+        <button class="button-card" id="button-${element.id}"> Reservar
+        </button>      
         </div>
     `
     }, "")
@@ -85,3 +84,20 @@ const unidadesAHtml = (array) => {
 }
 
 unidadesAHtml (productos);
+
+const allUnidades = document.querySelectorAll(".button-card")
+
+let cardsUnidadesSeleccionadas = []
+
+const eventoCards = ( nodos, array ) => {
+    for ( i = 0; i < nodos.length; i++ ) {
+        nodos[i].onclick = (e) => {                               
+        const id = e.currentTarget.id.slice (7)
+        const buscarUnidad = array.find ( element => element.id === Number(id) )
+        cardsUnidadesSeleccionadas.push (buscarUnidad)
+        console.log (cardsUnidadesSeleccionadas)
+        }
+    }
+}
+
+eventoCards(allUnidades, productos)
