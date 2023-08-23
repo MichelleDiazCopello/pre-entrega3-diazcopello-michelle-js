@@ -1,0 +1,295 @@
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: white;
+    top: 0;
+    z-index: 2;
+  }
+  header section .div--img-smallheader {
+    display: flex;
+    justify-content: center;
+  }
+  header section .navbar {
+    position: sticky;
+  }
+  header section ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  header section ul li {
+    list-style-type: none;
+  }
+  header section ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  header section img {
+    display: flex;
+  }
+  
+  .header__section--reservar {
+    display: grid;
+    margin: 0 0 10px 0;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagen imagen imagen imagen" "inicio ofertas unidades servicios";
+  }
+  
+  .html-reservar__section--reservar {
+    display: none;
+  }
+  
+  /*Grid Areas Header*/
+  .img-header {
+    grid-area: imagen;
+  }
+  
+  .section__li--inicio {
+    grid-area: inicio;
+  }
+  
+  .section__li--ofertas {
+    grid-area: ofertas;
+  }
+  
+  .section__li--unidades {
+    grid-area: unidades;
+  }
+  
+  .section__li--servicios {
+    grid-area: servicios;
+  }
+  
+  .section__li--reservar {
+    grid-area: reservar;
+  }
+  
+  /* Medias Queries Header */
+  @media (min-width: 768px) {
+    header {
+      position: sticky;
+    }
+    header .navbar {
+      display: none;
+    }
+    header .img-smallheader {
+      display: none;
+    }
+    header .header__navigation--portatil {
+      display: grid;
+      margin-bottom: 5px;
+      justify-items: center;
+      align-items: center;
+      row-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "inicio ofertas imagen unidades servicios";
+    }
+    .section__li--reservar {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .header__navigation--portatil {
+      display: none;
+    }
+  }
+  /* Formulario Header. */
+  .header-form {
+    display: none;
+  }
+  
+  /* Medias Queries Formulario */
+  @media (min-width: 768px) {
+    .header-form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 65px;
+      margin: 10px 0 10px 0;
+    }
+    .header-form div {
+      display: flex;
+      flex-direction: column;
+      padding: 5px 10px 5px 10px;
+      border-style: solid;
+      border-width: thin;
+      width: 25%;
+      align-items: center;
+    }
+    .header-form label {
+      display: flex;
+      align-items: flex-start;
+    }
+    .header-form input {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      border: none;
+      width: 100%;
+      height: 70%;
+    }
+    .header-form #check-out {
+      border-left: 0;
+      border-right: 0;
+    }
+    .header-form #peoples {
+      border-right: 0;
+    }
+    .header-form #boton-consultar {
+      background-color: rgb(82, 236, 159);
+      width: 100%;
+      height: 100%;
+      font-size: 130%;
+      margin: 0;
+      padding: 0;
+    }
+    .header-form #boton-consultar:hover {
+      font-weight: 600;
+    }
+  }
+
+  /* Unidades Main */
+
+.unidadesmain {
+    display: grid;
+  }
+  .unidadesmain ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .unidadesmain ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 15px 0;
+  }
+  #unidades-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex;
+    margin: 1em;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+  /* Medias Queries Unidades Main */
+  @media (min-width: 768px) {
+    .unidadesmain {
+      display: flex;
+      flex-direction: column;
+    }
+    .unidadesmain ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .unidadesmain ul li div {
+      height: 100%;
+    }
+  }
+  /* Footer */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+  }
+  .footer-container .footer__div--bloque1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container .footer__div--bloque1 .footer__bloque1--title {
+    font-size: 150%;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .footer-container .footer__div--bloque1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0%;
+  }
+  .footer-container .footer__div--bloque1 ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+  }
+  .footer-container .footer__div--bloque1 ul li p {
+    margin-bottom: 0;
+  }
+  .footer-container .footer__div--bloque1 ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Footer Grid Areas */
+  .footer__div--bloque1 {
+    grid-area: bloque1;
+  }
+  
+  .footer__div--bloque2 {
+    grid-area: bloque2;
+  }
+  
+  .footer__div--bloque3 {
+    grid-area: bloque3;
+  }
+  
+  /* Footer Medias Queries */
+  @media (min-width: 768px) {
+    .footer-container {
+      display: grid;
+    }
+    .footer-container .footer__div--container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "bloque1 bloque2 bloque3";
+      column-gap: 5px;
+      align-items: center;
+      justify-items: center;
+    }
+    .footer-container .footer__div--container div {
+      margin: 0;
+      padding: 0;
+    }
+    .footer-container .footer__div--container div li {
+      align-items: left;
+    }
+    .footer-container .footer__div--container #maps {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer-container li {
+      align-items: center;
+    }
+    .footer-container img {
+      display: none;
+    }
+    .footer-container #maps {
+      display: none;
+    }
+    .footer-container .footer__li--direction {
+      text-align: center;
+    }
+  }
+  
+  

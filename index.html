@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades - Complejo Los Palmares</title> <!-- Título de la página -->
+    <meta name="description" content="En Complejo Los Palmares contamos con dos hermosos departamentos totalmente equipados, con aire frío-calor, Wi-Fi y todo lo necesario para sentirte como en la calidez de tu hogar, ambos con una impactante vista al lago. Además contamos con pileta al aire libre, solárium húmedo y solarium seco."> <!-- Descripción de la Página Visible en Buscadores -->
+    <meta name="keywords" content="pileta, piscina, solárium, patio, juegos para niños, juguetes, lectura, trabajo, viajes por trabajo, reservar, contacto, teléfono, correo, ofertas, oferta, descuentos, descuento, off, cupones, alojamiento, vacaciones, familia, turismo, cabañas, departamento, carlos paz, sierras, lago, vistas, mascotas, naturaleza"> <!-- Palabras Clave de Búsqueda -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <!-- Link de Bootstrap -->
+    <link rel="stylesheet" href="styles-unidades.css"> <!-- Link CSS de Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Link Google para fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Link Google para fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> <!-- Link Google para fuentes -->
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+
+        <section>
+            <!-- Imagen Logotipo de la empresa -->
+            <div class="div--img-smallheader">
+                <img class="img-smallheader" src="media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="section__li--inicio">
+                            <li><a href="">Inicio</a></li>
+                        </ul>
+                        <ul class="section__li--ofertas">
+                            <li><a href="">Ofertas</a></li>
+                        </ul>
+                        <ul class="section__li--servicios">
+                            <li><a href="">Servicios</a></li>
+                        </ul>
+                        <ul class="section__li--reservar">
+                            <li><a href="">Reservar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+
+            <div class="header__navigation--portatil"> <!-- Menú de Navegación para grandes pantallas -->
+                <ul class="section__li--inicio">
+                    <li><span>Inicio</span></li>
+                </ul>
+                <ul class="section__li--ofertas">
+                    <li><span>Ofertas</span></li>
+                </ul>
+                <ul class="section__li--servicios">
+                    <li><span>Servicios</span></li>
+                </ul>
+                <ul class="section__li--unidades">
+                    <li><span>Unidades</span></li>
+                </ul>
+                <ul class="section__li--reservar">
+                    <li><span>Reservar</span></li>
+                </ul>
+                <!-- Imagen Logotipo de la empresa -->
+                <img class="img-header" src="media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+
+        </section>
+        
+        <form class="header-form" action="" method="post" enctype="application/x-www-form-urlencoded"> <!-- Formulario Consulta de Disponibilidad --> 
+            <!-- Bloque 1 - Ingreso -->
+            <div id="check-in">
+                <label for="Fecha de Ingreso">Fecha de Ingreso</label>
+                <input type="date" name="Fecha de Ingreso" id="Fecha de Ingreso">
+            </div>
+            <!-- Bloque 2 - Salida -->
+            <div id="check-out">
+                <label for="Fecha de Salida">Fecha de Salida</label>
+                <input type="date" name="Fecha de Salida" id="Fecha de Salida">
+            </div>
+            <!-- Bloque 3 - Cantidad de Personas -->
+            <div id="peoples">
+                <label for="Cantidad de Personas">Cantidad de Personas</label>
+                <input type="number" name="Cantidad de Personas" id="Cantidad de Personas">
+            </div>
+            <!-- Bloque 4 - Botón Consultar -->
+            <div class="header__form--boton">
+                <input id="boton-consultar" type="submit" value="Consultar">
+            </div>
+        </form>
+    </header>
+
+    <main class="unidadesmain">
+        <div id="unidades-container">
+
+        </div>
+    </main>
+
+    <footer class="footer-container"> <!-- Pie de Página -->
+        <div class="footer__div--container"> <!-- Contenedor de los bloques internos del pie de página -->
+            <div class="footer__div--bloque1"> <!-- Bloque 1 del pie de página - Información de Contacto -->
+                <p class="footer__bloque1--title">Complejo Los Palmares</p>
+                <ul>
+                    <li>
+                        <p>Teléfono</p>
+                        <a href="tel:+54 9 3541 23-2396">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>WhatsApp</p>
+                        <a href="https://wa.link/g9ne08">+54 9 3541 23-2396</a>
+                    </li>
+                    <li>
+                        <p>Ubicación</p>
+                        <a href="https://goo.gl/maps/vZAxzWz28oaCdboi8" class="footer__li--direction">La Pasionaria 1735 - Villa Parque Síquiman - Córdoba - Argentina</a>
+                    </li>
+                    <li>
+                        <p>Correo Electrónico</p>
+                        <a href="mailto:cabaniaslospalmares@gmail.com">cabaniaslospalmares@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div> <!-- Bloque 2 del pie de página - Logotipo de la empresa -->
+                <img class="footerlogo" src="media/logo.png" alt="Complejo Los Palmares Logo" width="300px" height="120px">
+            </div>
+            <div> <!-- Bloque 3 del pie de página - Mapa interactivo con la ubicación de la empresa -->
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.905085958769!2d-64.48128692524816!3d-31.361598293603343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d644cca1e58b9%3A0x1d246c6cacf33fa3!2sLos%20Palmares!5e0!3m2!1ses-419!2sar!4v1683259956452!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
