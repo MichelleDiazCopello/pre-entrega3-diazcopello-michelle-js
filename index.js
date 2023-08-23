@@ -96,6 +96,15 @@ const eventoCards = ( nodos, array ) => {
         const buscarUnidad = array.find ( element => element.id === Number(id) )
         cardsUnidadesSeleccionadas.push (buscarUnidad)
         console.log (cardsUnidadesSeleccionadas)
+
+        localStorage.setItem ("Unidades", JSON.stringify (cardsUnidadesSeleccionadas) )
+        // Toastify({
+        //     text: `Se ha añadido a ${ buscarPokemon.name } a favoritos.`,
+        //     className: "info",
+        //     style: {
+        //     background: "linear-gradient(to right, #00b09b, #96c93d)",
+        //     }
+        // }).showToast();
         }
     }
 }
